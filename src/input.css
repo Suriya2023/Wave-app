@@ -2,44 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-.hedaer1{
-    background: #e1ebfa;
-    width: 100%;
-    padding-bottom: 2rem;
+
+.mb-lg-0{
+    margin:0 auto;
+}
+.header-1{
+    background:#e1ebfa;
+    width:100%;
+    
 }
 .img-header{
-    border-radius: 57% 43% 70% 30% / 37% 53% 47% 63% ;
+    width:100%;
+    border-radius:61% 39% 39% 61% / 66% 52% 48% 34% ;
 }
-svg{
-    display: inline-block;
+.font-w{
+width:50%;
 }
-.font-family{
-    font-family: "Satisfy", cursive;
-    font-size: 5rem;
-    color: #a30000;
-    background: linear-gradient(120deg, #fff3cd, #fff3cd);
-    background-position: 0 80%;
+.fw-normal{
+    font-family: "Playwrite BE VLG", cursive;
+    color:#A30000;
+    font-size: larger;
+    background:linear-gradient(120deg,#fff3cd, #fff3cd);
     background-size: 100% 20%;
+    background-position: 0% 80%;
     background-repeat: no-repeat;
 }
-.font-family1{
-    font-family: "Satisfy", cursive;
-    font-size: 5vmin;
-    color: #a30000;
-    background: linear-gradient(120deg, #fff3cd, #fff3cd);
-    background-position: 0 80%;
-    background-size: 100% 20%;
-    background-repeat: no-repeat;
+
+
+.text-f{
+    border-bottom: linear-gradient(120deg,#e4a0a1,#e4a0a1);
+}
+
+.fw-bolder {
+    font-weight: bolder !important;
+    width: 96%;
+    font-size: 35rem;
+    margin-left: 2rem;
 }
 .section2{
     background-image: url(https://bootstrapbrain.com/demo/templates/wave/wave-lite/assets/img/cta/cta-img-1.jpg);
-    background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    height: 80vh;
-    filter: brightness(80%);
-    /* margin-top: 30em; */
+    background-attachment: fixed;
+    height: 100vh;
 }
 .span2{
     background: linear-gradient(120deg, #e4a0a1, #e4a0a1);
@@ -49,19 +55,49 @@ svg{
 }
 .div-text{
     position: absolute;
-    margin-top: -35rem;
-    margin-left: 0% !important;
+    margin-top: -32rem ;
+    margin-left: 10% !important;
+}
+.curs{
+    font-weight: 700;
+}
+.image{
+    margin-top: 1rem;
 }
 
-@media screen and (min-width: 320px) {
+.fw-normal{
+    /* background-color: #e4a0a1; */
+}
+
+#flexarrow{
+    display:inline-block;
+}
+@media (max-width:991px){
+    .startplus{
+        text-align: center;
+        margin: 0 auto;
+    }
+    figure img{
+        margin: 0 auto;
+    }
+    #flex{
+        flex-direction:column;
+    }
+}
+@media (min-width:320px){
     .div-text{
         position: absolute;
-        margin-top: -32rem;
-        margin-left: x-large;
+        margin-top: -32rem ;
+        margin-left: 1% !important;
     }
-
     .fw-bolder{
         margin-left: 0rem;
-        font-size: x-large;
+        font-size: 40px;
     }
+}
+
+#navbar{
+    width: 100%;
+    /* height: 2vmin; */
+    background: #e1ebfa;
 }
